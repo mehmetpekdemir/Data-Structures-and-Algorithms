@@ -3,7 +3,6 @@ package com.mehmetpekdemir.sort;
 import com.mehmetpekdemir.shared.Util;
 
 /**
- * 
  * <p>
  * Worst Case Performance = O(n^2) - Quadratic
  * </p>
@@ -11,30 +10,26 @@ import com.mehmetpekdemir.shared.Util;
  * Avarage Case Performance = O(n^2) - Quadratic
  * </p>
  * <p>
- * Best Case Performance = O(n) - Linear
+ * Best Case Performance = O(n^2) - Quadratic
  * </p>
- * 
  * 
  * @author MEHMET PEKDEMIR
  * @since 1.0
  */
-public final class BubbleSort {
+public final class SelectionSort {
 
 	public static int[] sort(int[] array) {
 
-		boolean flag = true;
-
 		for (int lastUnsortedIndex = array.length - 1; lastUnsortedIndex > 0; lastUnsortedIndex--) {
-			for (int i = 0; i < lastUnsortedIndex; i++) {
-				if (array[i] > array[i + 1]) {
-					flag = false;
-					Util.swap(array, i, i + 1);
+
+			int largest = 0;
+
+			for (int i = 1; i <= lastUnsortedIndex; i++) {
+				if (array[i] > array[largest]) {
+					largest = i;
 				}
 			}
-			if (flag == true) {
-				System.out.println("Already sorted.");
-				break;
-			}
+			Util.swap(array, largest, lastUnsortedIndex);
 		}
 
 		return array;
