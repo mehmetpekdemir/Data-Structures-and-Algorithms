@@ -36,3 +36,19 @@
 | Avarage Case | O(n^2) - Quadratic time |
 | Best Case | O(n^2) - Quadratic time |
 
+##### Insertion Sort
+| Performance  | Time Complexity |
+| ------------- | ------------- |
+| Worst Case | O(n^2) - Quadratic time |
+| Avarage Case | O(n^2) - Quadratic time |
+| Best Case | O(n) - Linear time |
+
+##### Shell Sort
+| Performance  | Time Complexity |
+| ------------- | ------------- |
+| Worst Case | O(n^2) - Quadratic time |
+| Avarage Case | O(nlogn) - n log-star n |
+| Best Case | O(nlogn) - n log-star n |
+
+
+
