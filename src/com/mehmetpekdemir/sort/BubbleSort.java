@@ -1,5 +1,7 @@
 package com.mehmetpekdemir.sort;
 
+import com.mehmetpekdemir.shared.Util;
+
 /**
  * 
  * <p>
@@ -21,11 +23,12 @@ public final class BubbleSort {
 	public static int[] sort(int[] array) {
 
 		boolean flag = true;
+
 		for (int lastUnsortedIndex = array.length - 1; lastUnsortedIndex > 0; lastUnsortedIndex--) {
 			for (int i = 0; i < lastUnsortedIndex; i++) {
 				if (array[i] > array[i + 1]) {
 					flag = false;
-					swap(array, i, i + 1);
+					Util.swap(array, i, i + 1);
 				}
 			}
 			if (flag == true) {
@@ -35,16 +38,6 @@ public final class BubbleSort {
 		}
 
 		return array;
-	}
-
-	private static void swap(int[] array, int i, int j) {
-		if (i == j) {
-			return;
-		}
-
-		final int temp = array[i];
-		array[i] = array[j];
-		array[j] = temp;
 	}
 
 }
