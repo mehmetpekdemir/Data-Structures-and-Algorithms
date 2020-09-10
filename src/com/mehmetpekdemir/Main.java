@@ -1,8 +1,11 @@
 package com.mehmetpekdemir;
 
 import com.mehmetpekdemir.sort.BubbleSort;
+import com.mehmetpekdemir.sort.CountingSort;
 import com.mehmetpekdemir.sort.InsertionSort;
 import com.mehmetpekdemir.sort.MergeSort;
+import com.mehmetpekdemir.sort.QuickSort;
+import com.mehmetpekdemir.sort.RadixSort;
 import com.mehmetpekdemir.sort.SelectionSort;
 import com.mehmetpekdemir.sort.ShellSort;
 
@@ -53,6 +56,30 @@ public class Main {
 		MergeSort.sort(mergeSortArray, 0, mergeSortArray.length);
 		for (int i = 0; i < mergeSortArray.length; i++) {
 			System.out.print(mergeSortArray[i] + " ");
+		}
+
+		System.out.println("\n---------- Quick Sort ----------");
+
+		int[] quickSortArray = { 20, 35, -15, 7, 55, 1, -22 };
+		QuickSort.sort(quickSortArray, 0, quickSortArray.length);
+		for (int i = 0; i < quickSortArray.length; i++) {
+			System.out.print(quickSortArray[i] + " ");
+		}
+
+		System.out.println("\n---------- Counting Sort ----------");
+
+		int[] countingSortArray = { 2, 5, 9, 8, 2, 8, 7, 10, 4, 3 };
+		CountingSort.sort(countingSortArray, 1, 10);
+		for (int i = 0; i < countingSortArray.length; i++) {
+			System.out.print(countingSortArray[i] + " ");
+		}
+
+		System.out.println("\n---------- Radix Sort ----------");
+
+		int[] radixSortArray = { 4725, 4586, 1330, 8792, 1594, 5729 };
+		RadixSort.sort(radixSortArray, 10, 4);
+		for (int i = 0; i < radixSortArray.length; i++) {
+			System.out.print(radixSortArray[i] + " ");
 		}
 
 	}
