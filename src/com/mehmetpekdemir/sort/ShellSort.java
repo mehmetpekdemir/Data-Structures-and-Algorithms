@@ -17,7 +17,7 @@ package com.mehmetpekdemir.sort;
  */
 public final class ShellSort {
 
-	public static int[] sort(int[] array) {
+	public static void sort(int[] array) {
 
 		for (int gap = array.length / 2; gap > 0; gap /= 2) {
 
@@ -36,7 +36,6 @@ public final class ShellSort {
 
 		}
 
-		return array;
 	}
 
 }

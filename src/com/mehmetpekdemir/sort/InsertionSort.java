@@ -17,7 +17,7 @@ package com.mehmetpekdemir.sort;
  */
 public final class InsertionSort {
 
-	public static int[] sort(int[] array) {
+	public static void sort(int[] array) {
 
 		for (int firstUnsortedIndex = 1; firstUnsortedIndex < array.length; firstUnsortedIndex++) {
 			int newElement = array[firstUnsortedIndex];
@@ -31,6 +31,5 @@ public final class InsertionSort {
 			array[i] = newElement;
 		}
 
-		return array;
 	}
 }
