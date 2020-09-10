@@ -19,7 +19,7 @@ import com.mehmetpekdemir.shared.Util;
  */
 public final class BubbleSort {
 
-	public static int[] sort(int[] array) {
+	public static void sort(int[] array) {
 
 		boolean flag = true;
 
@@ -36,7 +36,6 @@ public final class BubbleSort {
 			}
 		}
 
-		return array;
 	}
 
 }

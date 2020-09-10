@@ -19,7 +19,7 @@ import com.mehmetpekdemir.shared.Util;
  */
 public final class SelectionSort {
 
-	public static int[] sort(int[] array) {
+	public static void sort(int[] array) {
 
 		for (int lastUnsortedIndex = array.length - 1; lastUnsortedIndex > 0; lastUnsortedIndex--) {
 
@@ -33,7 +33,6 @@ public final class SelectionSort {
 			Util.swap(array, largest, lastUnsortedIndex);
 		}
 
-		return array;
 	}
 
 }
