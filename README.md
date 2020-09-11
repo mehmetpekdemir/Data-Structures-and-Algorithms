@@ -50,5 +50,31 @@
 | Avarage Case | O(nlogn) - n log-star n |
 | Best Case | O(nlogn) - n log-star n |
 
+##### Merge Sort
+| Performance  | Time Complexity |
+| ------------- | ------------- |
+| Worst Case | O(nlogn) - n log-star n |
+| Avarage Case | O(nlogn) - n log-star n |
+| Best Case | O(nlogn) - n log-star n |
 
+##### Quick Sort
+| Performance  | Time Complexity |
+| ------------- | ------------- |
+| Worst Case | O(n^2) - Quadratic time |
+| Avarage Case | O(nlogn) - n log-star n |
+| Best Case | O(nlogn) - n log-star n |
+
+##### Counting Sort
+| Performance  | Time Complexity |
+| ------------- | ------------- |
+| Worst Case | O(n+k) |
+| Avarage Case | O(n+k) |
+| Best Case | O(n+k) |
+
+##### Radix Sort
+| Performance  | Time Complexity |
+| ------------- | ------------- |
+| Worst Case | O(kn) |
+| Avarage Case | O(kn) |
+| Best Case | O(kn) |
 
