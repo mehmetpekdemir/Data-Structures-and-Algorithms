@@ -1,6 +1,6 @@
 package com.mehmetpekdemir.list.singlylinkedlist;
 
-import com.mehmetpekdemir.list.Employee;
+import com.mehmetpekdemir.shared.Employee;
 
 /**
  * 
