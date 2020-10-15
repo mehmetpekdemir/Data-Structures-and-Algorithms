@@ -78,3 +78,44 @@
 | Avarage Case | O(kn) |
 | Best Case | O(kn) |
 
+### Performance analysis of ArrayList, LinkedList and Vector
+
+##### ArrayList
+| Operation  | Time Complexity |
+| ------------- | ------------- |
+| Insert at last index | O(1) --> If array copy operation is Considered then O(n)|
+| Insert at given index | O(n) |
+| Search by value | O(n) (	Preferred ) |
+| Get by index| O(1) (	Preferred ) |
+| Remove by value | O(n) |
+| Remove by index | O(n) |
+
+```java
+List<Employee> employees = new ArrayList<>();
+```
+
+##### LinkedList
+| Operation  | Time Complexity |
+| ------------- | ------------- |
+| Insert at last index | O(1) (	Preferred ) |
+| Insert at given index | O(n) (	Preferred ) |
+| Search by value | O(n) |
+| Get by index| O(n) |
+| Remove by value | O(n) (	Preferred ) |
+| Remove by index | O(n) (	Preferred ) |
+
+```java
+List<Employee> employees= new LinkedList<>();
+```
+
+##### Vector
+
+Vector : Unlike the new collection implementations, Vector is synchronized.
+If a thread-safe implementation is not needed, it is recommended to use
+ArrayList in place of Vector.
+
+Performance: ArrayList is faster, since it is non-synchronized, while vector operations give slower performance since they are synchronized (thread-safe).
+  
+```java
+List<Employee> employees = new Vector<>();
+```
