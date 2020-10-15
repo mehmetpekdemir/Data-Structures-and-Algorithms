@@ -119,3 +119,23 @@ Performance: ArrayList is faster, since it is non-synchronized, while vector ope
 ```java
 Vector<Employee> employees = new Vector<>();
 ```
+
+### Stack
+
+##### ArrayStack
+
+| Operation  | Time Complexity |
+| ------------- | ------------- |
+| Push | O(n) |
+| Pop | O(1) |
+| Peek | O(1) |
+
+##### LinkedStack
+
+| Operation  | Time Complexity |
+| ------------- | ------------- |
+| Push | O(1) |
+| Pop | O(1) |
+| Peek | O(1) |
+
+
