@@ -91,7 +91,7 @@
 | Remove by index | O(n) |
 
 ```java
-List<Employee> employees = new ArrayList<>();
+ArrayList<Employee> employees = new ArrayList<>();
 ```
 
 ##### LinkedList
@@ -105,7 +105,7 @@ List<Employee> employees = new ArrayList<>();
 | Remove by index | O(n) (	Preferred ) |
 
 ```java
-List<Employee> employees= new LinkedList<>();
+LinkedList<Employee> employees= new LinkedList<>();
 ```
 
 ##### Vector
@@ -117,5 +117,5 @@ ArrayList in place of Vector.
 Performance: ArrayList is faster, since it is non-synchronized, while vector operations give slower performance since they are synchronized (thread-safe).
   
 ```java
-List<Employee> employees = new Vector<>();
+Vector<Employee> employees = new Vector<>();
 ```

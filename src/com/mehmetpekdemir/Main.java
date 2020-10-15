@@ -1,6 +1,7 @@
 package com.mehmetpekdemir;
 
 import com.mehmetpekdemir.list.Employee;
+import com.mehmetpekdemir.list.doublylinkedlist.EmployeeDoublyLinkedList;
 import com.mehmetpekdemir.list.singlylinkedlist.EmployeeLinkedList;
 import com.mehmetpekdemir.sort.BubbleSort;
 import com.mehmetpekdemir.sort.CountingSort;
@@ -86,16 +87,32 @@ public class Main {
 
 		System.out.println("\n---------- Singly Linked List ----------");
 
-		EmployeeLinkedList list = new EmployeeLinkedList();
-		System.out.println(list.isEmpty());
+		EmployeeLinkedList singlyLinkedList = new EmployeeLinkedList();
+		System.out.println(singlyLinkedList.isEmpty());
 
-		list.addToFront(new Employee(1L, "Mehmet", "Pekdemir"));
-		list.addToFront(new Employee(2L, "Mehmet2", "Pekdemir2"));
-		list.addToFront(new Employee(3L, "Mehmet3", "Pekdemir3"));
-		System.out.println(list.getSize());
-		System.out.println(list.removeFromFront());
+		singlyLinkedList.addToFront(new Employee(1L, "Mehmet", "Pekdemir"));
+		singlyLinkedList.addToFront(new Employee(2L, "Mehmet2", "Pekdemir2"));
+		singlyLinkedList.addToFront(new Employee(3L, "Mehmet3", "Pekdemir3"));
+		System.out.println(singlyLinkedList.removeFromFront());
+		System.out.println(singlyLinkedList.getSize());
+
+		singlyLinkedList.printList();
+
+		System.out.println("\n---------- Doubly Linked List ----------");
+
+		EmployeeDoublyLinkedList doublyLinkedList = new EmployeeDoublyLinkedList();
+		System.out.println(doublyLinkedList.isEmpty());
+
+		doublyLinkedList.addToFront(new Employee(1L, "Mehmet", "Pekdemir"));
+		doublyLinkedList.addToFront(new Employee(2L, "Mehmet2", "Pekdemir2"));
+		doublyLinkedList.addToFront(new Employee(3L, "Mehmet3", "Pekdemir3"));
+		System.out.println(doublyLinkedList.removeFromFront());
+		System.out.println(doublyLinkedList.getSize());
 		
-		list.printList();
+		doublyLinkedList.addToEnd(new Employee(3L, "Mehmet3", "Pekdemir3"));
+		doublyLinkedList.printList();
+
+		System.out.println(doublyLinkedList.removeFromEnd());
 	}
 
 }
