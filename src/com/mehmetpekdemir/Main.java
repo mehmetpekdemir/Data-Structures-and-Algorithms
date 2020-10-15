@@ -1,5 +1,7 @@
 package com.mehmetpekdemir;
 
+import com.mehmetpekdemir.list.Employee;
+import com.mehmetpekdemir.list.singlylinkedlist.EmployeeLinkedList;
 import com.mehmetpekdemir.sort.BubbleSort;
 import com.mehmetpekdemir.sort.CountingSort;
 import com.mehmetpekdemir.sort.InsertionSort;
@@ -82,6 +84,18 @@ public class Main {
 			System.out.print(radixSortArray[i] + " ");
 		}
 
+		System.out.println("\n---------- Singly Linked List ----------");
+
+		EmployeeLinkedList list = new EmployeeLinkedList();
+		System.out.println(list.isEmpty());
+
+		list.addToFront(new Employee(1L, "Mehmet", "Pekdemir"));
+		list.addToFront(new Employee(2L, "Mehmet2", "Pekdemir2"));
+		list.addToFront(new Employee(3L, "Mehmet3", "Pekdemir3"));
+		System.out.println(list.getSize());
+		System.out.println(list.removeFromFront());
+		
+		list.printList();
 	}
 
 }
