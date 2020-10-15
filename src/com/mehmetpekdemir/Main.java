@@ -1,8 +1,8 @@
 package com.mehmetpekdemir;
 
-import com.mehmetpekdemir.list.Employee;
 import com.mehmetpekdemir.list.doublylinkedlist.EmployeeDoublyLinkedList;
 import com.mehmetpekdemir.list.singlylinkedlist.EmployeeLinkedList;
+import com.mehmetpekdemir.shared.Employee;
 import com.mehmetpekdemir.sort.BubbleSort;
 import com.mehmetpekdemir.sort.CountingSort;
 import com.mehmetpekdemir.sort.InsertionSort;
@@ -11,6 +11,8 @@ import com.mehmetpekdemir.sort.QuickSort;
 import com.mehmetpekdemir.sort.RadixSort;
 import com.mehmetpekdemir.sort.SelectionSort;
 import com.mehmetpekdemir.sort.ShellSort;
+import com.mehmetpekdemir.stack.arraystack.ArrayStack;
+import com.mehmetpekdemir.stack.linkedstack.LinkedStack;
 
 /**
  * 
@@ -108,11 +110,42 @@ public class Main {
 		doublyLinkedList.addToFront(new Employee(3L, "Mehmet3", "Pekdemir3"));
 		System.out.println(doublyLinkedList.removeFromFront());
 		System.out.println(doublyLinkedList.getSize());
-		
+
 		doublyLinkedList.addToEnd(new Employee(3L, "Mehmet3", "Pekdemir3"));
 		doublyLinkedList.printList();
 
 		System.out.println(doublyLinkedList.removeFromEnd());
+
+		System.out.println("\n---------- Array Stack ----------");
+
+		ArrayStack arrayStack = new ArrayStack(3);
+		arrayStack.push(new Employee(1L, "Mehmet", "Pekdemir"));
+		arrayStack.push(new Employee(2L, "Mehmet2", "Pekdemir2"));
+		arrayStack.push(new Employee(3L, "Mehmet3", "Pekdemir3"));
+
+		arrayStack.printStack();
+
+		System.out.println(arrayStack.pop());
+
+		System.out.println(arrayStack.size());
+
+		System.out.println(arrayStack.peek());
+
+		System.out.println("\n---------- Linked Stack ----------");
+
+		LinkedStack linkedStack = new LinkedStack();
+		linkedStack.push(new Employee(1L, "Mehmet", "Pekdemir"));
+		linkedStack.push(new Employee(2L, "Mehmet2", "Pekdemir2"));
+		linkedStack.push(new Employee(3L, "Mehmet3", "Pekdemir3"));
+
+		linkedStack.printStack();
+
+		System.out.println(linkedStack.pop());
+
+		System.out.println(linkedStack.size());
+
+		System.out.println(linkedStack.peek());
+
 	}
 
 }

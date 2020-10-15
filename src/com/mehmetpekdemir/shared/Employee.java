@@ -1,4 +1,4 @@
-package com.mehmetpekdemir.list;
+package com.mehmetpekdemir.shared;
 
 /**
  * 
