@@ -2,6 +2,8 @@ package com.mehmetpekdemir;
 
 import com.mehmetpekdemir.list.doublylinkedlist.EmployeeDoublyLinkedList;
 import com.mehmetpekdemir.list.singlylinkedlist.EmployeeLinkedList;
+import com.mehmetpekdemir.search.binarysearch.BinarySearch;
+import com.mehmetpekdemir.search.linearsearch.LinearSearch;
 import com.mehmetpekdemir.shared.Employee;
 import com.mehmetpekdemir.sort.BubbleSort;
 import com.mehmetpekdemir.sort.CountingSort;
@@ -146,6 +148,15 @@ public class Main {
 
 		System.out.println(linkedStack.peek());
 
+		System.out.println("\n---------- Linear Search ----------");
+
+		final int[] linearSearchArray = { 20, 35, -15, 7, 55, 1, -22 };
+		System.out.println(LinearSearch.search(linearSearchArray, -15));
+
+		System.out.println("\n---------- Binary Search ----------");
+
+		final int[] binarySearchArray = { -22, -15, 1, 7, 20, 35, 55 };
+		System.out.println(BinarySearch.search(binarySearchArray, -15));
 	}
 
 }
