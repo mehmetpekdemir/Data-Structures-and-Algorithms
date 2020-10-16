@@ -138,4 +138,18 @@ Vector<Employee> employees = new Vector<>();
 | Pop | O(1) |
 | Peek | O(1) |
 
+### Search Algorithms
+
+##### Linear Search
+
+| Operation  | Time Complexity |
+| ------------- | ------------- |
+| Search | O(n) |
+
+##### Binary Search
+
+| Operation  | Time Complexity |
+| ------------- | ------------- |
+| Search | O(logn) |
+
 
