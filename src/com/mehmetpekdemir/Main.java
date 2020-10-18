@@ -1,7 +1,10 @@
 package com.mehmetpekdemir;
 
+import java.util.PriorityQueue;
+
 import com.mehmetpekdemir.list.doublylinkedlist.EmployeeDoublyLinkedList;
 import com.mehmetpekdemir.list.singlylinkedlist.EmployeeLinkedList;
+import com.mehmetpekdemir.queue.arrayqueue.ArrayQueue;
 import com.mehmetpekdemir.search.binarysearch.BinarySearch;
 import com.mehmetpekdemir.search.linearsearch.LinearSearch;
 import com.mehmetpekdemir.shared.Employee;
@@ -157,6 +160,38 @@ public class Main {
 
 		final int[] binarySearchArray = { -22, -15, 1, 7, 20, 35, 55 };
 		System.out.println(BinarySearch.search(binarySearchArray, -15));
+
+		System.out.println("\n---------- Array Queue ----------");
+
+		ArrayQueue arrayQueue = new ArrayQueue(3);
+
+		arrayQueue.add(new Employee(1L, "Mehmet", "Pekdemir"));
+		arrayQueue.add(new Employee(2L, "Mehmet2", "Pekdemir2"));
+		arrayQueue.add(new Employee(3L, "Mehmet3", "Pekdemir3"));
+
+		arrayQueue.printQueue();
+
+		System.out.println(arrayQueue.isEmpty());
+
+		System.out.println(arrayQueue.remove());
+
+		System.out.println(arrayQueue.size());
+
+		System.out.println(arrayQueue.peek());
+
+		System.out.println("\n---------- Priority Queue ----------");
+
+		PriorityQueue<Employee> priorityQueue = new PriorityQueue<Employee>();
+
+		priorityQueue.add(new Employee(1L, "Mehmet", "Pekdemir")); // add
+		priorityQueue.add(new Employee(2L, "Mehmet2", "Pekdemir2"));
+		priorityQueue.add(new Employee(3L, "Mehmet3", "Pekdemir3"));
+
+		System.out.println(priorityQueue.peek()); // printing the top element
+
+		System.out.println(priorityQueue.poll()); // removing the top element
+
+		System.out.println(priorityQueue.peek());
 	}
 
 }

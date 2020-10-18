@@ -121,6 +121,7 @@ Vector<Employee> employees = new Vector<>();
 ```
 
 ### Stack
+LIFO (Last-in-first-out)
 
 ##### ArrayStack
 
@@ -151,5 +152,24 @@ Vector<Employee> employees = new Vector<>();
 | Operation  | Time Complexity |
 | ------------- | ------------- |
 | Search | O(logn) |
+
+### Queue
+FIFO (First-in-first-out)
+
+##### Array implementation of queue 
+
+| Operation  | Time Complexity |
+| ------------- | ------------- |
+| Add | O(1) |
+| Remove | O(n) |
+| Peek | O(1) |
+
+##### LinkedList implementation of queue 
+
+| Operation  | Time Complexity |
+| ------------- | ------------- |
+| Add | O(1) |
+| Remove | O(1) |
+| Peek | O(1) |
 
 
