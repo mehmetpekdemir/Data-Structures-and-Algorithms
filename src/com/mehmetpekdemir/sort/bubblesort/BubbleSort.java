@@ -1,4 +1,4 @@
-package com.mehmetpekdemir.sort;
+package com.mehmetpekdemir.sort.bubblesort;
 
 import com.mehmetpekdemir.shared.Util;
 
