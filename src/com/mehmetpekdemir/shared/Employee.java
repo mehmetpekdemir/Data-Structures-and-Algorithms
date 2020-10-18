@@ -5,7 +5,7 @@ package com.mehmetpekdemir.shared;
  * @author MEHMET PEKDEMIR
  * @since 1.0
  */
-public class Employee {
+public class Employee implements Comparable<Employee> {
 
 	private Long id;
 	private String firstName;
@@ -81,6 +81,17 @@ public class Employee {
 		} else if (!lastName.equals(other.lastName))
 			return false;
 		return true;
+	}
+
+	@Override
+	public int compareTo(Employee employee) {
+		if (this.id == employee.getId()) {
+			return 0;
+		} else if (this.id < employee.getId()) {
+			return 1;
+		} else {
+			return -1;
+		}
 	}
 
 }
