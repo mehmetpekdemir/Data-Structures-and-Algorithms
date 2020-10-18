@@ -12,10 +12,11 @@ import com.mehmetpekdemir.shared.Employee;
 public class ArrayStack {
 
 	private Employee[] stack;
-	private int top = 0;
+	private int top;
 
 	public ArrayStack(int capacity) {
 		stack = new Employee[capacity];
+		top = 0;
 	}
 
 	public void push(Employee employee) {
