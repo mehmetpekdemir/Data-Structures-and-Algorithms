@@ -173,3 +173,10 @@ FIFO (First-in-first-out)
 | Peek | O(1) |
 
 
+### Binary Search Tree ( BST )
+
+| Operation  | Time Complexity |
+| ------------- | ------------- |
+| Insertion | O(logn) |
+| Deletion | O(logn) |
+| Retrieval | O(logn) |
