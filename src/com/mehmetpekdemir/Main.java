@@ -1,6 +1,7 @@
 package com.mehmetpekdemir;
 
 import java.util.PriorityQueue;
+import java.util.TreeSet;
 
 import com.mehmetpekdemir.list.doublylinkedlist.EmployeeDoublyLinkedList;
 import com.mehmetpekdemir.list.singlylinkedlist.EmployeeLinkedList;
@@ -219,6 +220,33 @@ public class Main {
 		System.out.println("\n" + tree.get(27));
 		System.out.println(tree.min());
 		System.out.println(tree.max());
+
+		tree.delete(30);
+		tree.traverseInOrder();
+
+		System.out.println("\n----------TreeSet----------");
+
+		TreeSet<Employee> treeSet = new TreeSet<Employee>();
+		treeSet.add(new Employee(1L, "Mehmet", "Pekdemir"));
+		treeSet.add(new Employee(2L, "Mehmet2", "Pekdemir2"));
+		treeSet.add(new Employee(3L, "Mehmet3", "Pekdemir3"));
+
+		// Duplicates will not get insert
+		treeSet.add(new Employee(3L, "Mehmet3", "Pekdemir3"));
+
+		treeSet.forEach(System.out::println);
+
+		System.out.println("\n----------TreeSet String----------");
+		TreeSet<String> treeSetString = new TreeSet<String>();
+
+		treeSetString.add("Mehmet");
+		treeSetString.add("Pekdemir");
+		treeSetString.add("Test");
+		treeSetString.add("A");
+		treeSetString.add("B");
+		treeSetString.add("C");
+
+		treeSetString.forEach(System.out::println);
 
 	}
 
