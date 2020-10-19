@@ -207,6 +207,19 @@ public class Main {
 		tree.insert(22);
 		tree.insert(32);
 
+		System.out.println("\n----------Pre Order----------");
+		tree.traversePreOrder();
+
+		System.out.println("\n----------In Order----------");
+		tree.traverseInOrder();
+
+		System.out.println("\n----------Post Order----------");
+		tree.traversePostOrder();
+
+		System.out.println("\n" + tree.get(27));
+		System.out.println(tree.min());
+		System.out.println(tree.max());
+
 	}
 
 }
