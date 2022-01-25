@@ -49,7 +49,7 @@ public class ArrayStack {
 	}
 
 	public boolean isEmpty() {
-		return top == 0;
+		return top == -1;
 	}
 
 	public int size() {
